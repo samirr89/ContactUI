@@ -8,7 +8,9 @@ import { ContactSystemComponent } from './modules/core/contact-system/contact-sy
 import { ContactBreadcrumbComponent } from './modules/core/contact-breadcrumb/contact-breadcrumb.component';
 import { LoginComponent } from './modules/core/login/login.component';
 import { RegisterComponent } from './modules/core/register/register.component';
-
+import {MatMenuModule} from '@angular/material/menu';
+import { MaterialModules } from './models/material';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,9 @@ import { RegisterComponent } from './modules/core/register/register.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ...MaterialModules
   ],
   providers: [],
   bootstrap: [AppComponent]

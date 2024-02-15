@@ -1,0 +1,15 @@
+:host {
+    z-index: 9;
+
+}
+
+header {
+    color: #ccc;
+    background-color: #fff;
+    padding: 0 0.65rem;
+    display: flex;
+    align-items: stretch;
+    border-bottom: 1px solid #bdbbbb;
+    position: relative;
+    height: 100%;
+}

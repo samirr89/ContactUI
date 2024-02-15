@@ -1,1 +1,24 @@
-<p>contact-system works!</p>
+
+<div class="main-container">
+
+    <mat-drawer-container class="example-container" autosize>
+        <mat-drawer #drawer opened class="example-sidenav" mode="side">
+            <div class="breadcrumb">
+                <app-contact-breadcrumb></app-contact-breadcrumb>
+            </div>
+         
+        </mat-drawer>
+        <div class="body-container">
+            <app-header></app-header>
+            <router-outlet></router-outlet>
+        </div>
+        <div class="example-sidenav-content">
+          <button type="button" mat-button (click)="drawer.toggle()">
+            Toggle sidenav
+          </button>
+        </div>
+      
+      </mat-drawer-container>
+
+    
+</div>
